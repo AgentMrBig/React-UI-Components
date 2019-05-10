@@ -4,7 +4,7 @@
     width: 96.8%;
     padding: 10px;
     display: flex;
-    border: solid 1px red;
+    /* border: solid 1px red; */
     justify-content: flex-end;
 }
 
@@ -16,7 +16,8 @@
 .thumb-wrapper {
     height: 50px;
     padding: 0.3em;
-    border: solid 1px green;
+    padding-top: 1rem;
+    /* border: solid 1px green; */
     order: -1;
 }
 

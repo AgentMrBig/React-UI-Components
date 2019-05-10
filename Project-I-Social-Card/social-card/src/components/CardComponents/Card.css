@@ -3,7 +3,7 @@
 .banner-wrapper {
     display: flex;
     flex-direction: column;
-    border: solid 1px green;
+    /* border: solid 1px green; */
 }
 
 .banner-container-wrapper {
@@ -13,12 +13,16 @@
     border-radius: 4px;
     background: hsl(0, 0%, 100%);
     background-size: contain;
+    justify-content: center;
 }
 
 .banner-img {
     border-radius: 4px 4px 0 0;
     max-height: 100%;
     max-width: 100%;
+    margin: 0;
+    width: 100%;
+
 }
 
 .banner-bottom {
@@ -31,11 +35,14 @@
     border-left: 1px solid #e3e3e3;
     border-right: 1px solid #e3e3e3;
     border-radius: 0 0 4px 4px;
+    padding-bottom: 2.8rem;
 }
 
 .banner-content {
     margin: 0;
-    padding: 0.3em;
+    padding-top: 0.8rem;
+    padding-left: 0.8rem;
+    padding-bottom: 0.8rem;
 }
 
 .link {
