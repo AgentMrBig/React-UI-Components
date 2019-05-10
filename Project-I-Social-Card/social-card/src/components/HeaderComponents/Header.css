@@ -1,14 +1,23 @@
 /* All styles for your header Components live here */
 .container-header {
-    height: 50px;
+    height: 100px;
+    width: 96.8%;
     padding: 10px;
     display: flex;
-    border: solid 1px red
+    border: solid 1px red;
+    justify-content: flex-end;
+}
+
+.header-title-content {
+    flex-direction: column;
+    margin: 10px;
 }
 
 .thumb-wrapper {
     height: 50px;
     padding: 0.3em;
+    border: solid 1px green;
+    order: -1;
 }
 
 .thumb-img {
@@ -23,7 +32,7 @@
 .header-title {
     font-size: 14px;
     font-weight: 600;
-    padding: 0 0.3em;
+    padding: 0 0em;
 }
 
 .header-title-wrapper {

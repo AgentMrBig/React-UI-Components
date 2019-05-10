@@ -1,7 +1,6 @@
 import React from 'react'
 import './Header.css'
 
-import HeaderContent from '../HeaderComponents/HeaderContent'
 // import moment from 'moment'
 // const time = moment()
 
