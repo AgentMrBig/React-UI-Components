@@ -25,7 +25,8 @@
 }
 
 .time-stamp {
-    font-weight: 300;
+    font-size: 0.8rem;
+    color: grey;
     padding: 5px;
 }
 
