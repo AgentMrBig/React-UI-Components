@@ -1,0 +1,27 @@
+.numButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 5rem;
+    height: 5rem;
+    border: solid 2px grey;
+}
+
+.clearButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 15rem;
+    height: 5rem;
+    border: solid 2px grey;
+}
+
+.zeroButton {
+    border: solid 2px grey;
+}
+
+.actionButton {
+    border: solid 2px grey;
+}
+
+.buttons {}
