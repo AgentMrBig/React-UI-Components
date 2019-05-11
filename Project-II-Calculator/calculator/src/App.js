@@ -1,5 +1,6 @@
 import React from 'react'
 import './App.css'
+import './components/ButtonComponents/Button.css'
 
 import CalculatorDisplay from './components/DisplayComponents/CalculatorDisplay'
 import NumberButton from './components/ButtonComponents/NumberButton'

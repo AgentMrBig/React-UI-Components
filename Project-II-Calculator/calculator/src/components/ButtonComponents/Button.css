@@ -24,4 +24,9 @@
     border: solid 2px grey;
 }
 
-.buttons {}
+.buttons {
+    display: flex;
+    align-items: flex-start;
+    border: solid 2px green;
+    height: 100%;
+}
