@@ -1,9 +1,17 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+
+}
+
 .calcContainer {
     display: flex;
     flex-wrap: wrap;
+
     /* justify-content: center; */
     width: 24rem;
     /* height: 30rem; */
     height: auto;
-    border: solid 1px red;
+    border: solid 1px grey;
 }
