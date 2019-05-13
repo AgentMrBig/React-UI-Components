@@ -45,7 +45,7 @@ const NumberButton = props => {
     } else {
       buttonClicked.classList.toggle('buttonClick')
     }
-    console.log('The button was pressed', buttonClicked)
+    // console.log('The button was pressed', buttonClicked)
   }
 
   // on mouseup run forEach on all buttonId's feeding resetStyle function to remove
@@ -53,13 +53,13 @@ const NumberButton = props => {
   var buttonUp = event => {
     event.preventDefault()
 
-    if (!mouseDown) {
-      console.log('RELEASED')
-    }
+    // if (!mouseDown) {
+    //   console.log('RELEASED')
+    // }
 
     numberButtonIds.forEach(resetStyle)
 
-    console.log('The button was release', buttonClicked)
+    // console.log('The button was release', buttonClicked)
   }
 
   // testing setting mouseDown as a 1 or 0, true or false
