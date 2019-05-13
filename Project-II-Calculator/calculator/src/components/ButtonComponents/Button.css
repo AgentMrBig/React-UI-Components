@@ -12,14 +12,21 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 75%;
+    width: 76%;
     height: 4rem;
-    border: solid 2px grey;
+    border: solid 1px grey;
     font-size: 3rem;
 }
 
 .zeroButton {
-    border: solid 2px grey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid 1px grey;
+    width: 76%;
+    height: 4rem;
+    font-size: 3rem;
+
 }
 
 .actionButton {
@@ -43,7 +50,7 @@
 
 }
 
-.firstButtonRow {
+.buttonRow {
     display: flex;
     justify-content: center;
     align-items: space-evenly;
@@ -52,4 +59,20 @@
     height: 100%;
     width: 100%;
 
+}
+
+.buttonClick {
+    border: solid 2px grey;
+    height: 3.9rem;
+    width: 24.5%;
+    font-size: 2.95rem;
+    background-color: #F0F8FF;
+}
+
+.bigButtonClick {
+    border: solid 2px grey;
+    height: 3.9rem;
+    width: 74.5%;
+    font-size: 2.95rem;
+    background-color: #F0F8FF;
 }

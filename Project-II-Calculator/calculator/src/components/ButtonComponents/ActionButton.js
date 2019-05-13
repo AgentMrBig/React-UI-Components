@@ -2,10 +2,12 @@ import React from 'react'
 import './Button.css'
 
 const ActionButton = props => {
-  //   return <div className='numButton' />
+  const actionButtonIds = ['divide', 'times', 'minus', 'add', 'equal']
 
   return (
-    <div className={props.buttonStyle || 'actionButton'}>{props.text || 0}</div>
+    <div id={props.id} className={props.buttonStyle || 'actionButton'}>
+      {props.text || 0}
+    </div>
   )
 }
 
