@@ -12,7 +12,7 @@ const App = () => {
       <CalculatorDisplay />
       <div className='buttons'>
         <div className='buttonRow'>
-          <NumberButton id='clear' buttonStyle={'clearButton'} text='CLEAR' />
+          <NumberButton id='10' buttonStyle={'clearButton'} text='CLEAR' />
           <ActionButton
             id='divide'
             buttonStyle={'actionButton'}

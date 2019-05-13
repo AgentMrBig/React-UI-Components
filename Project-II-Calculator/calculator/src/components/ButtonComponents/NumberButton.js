@@ -2,7 +2,19 @@ import React from 'react'
 import './Button.css'
 
 const NumberButton = props => {
-  const numberButtonIds = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9']
+  const numberButtonIds = [
+    '10',
+    '0',
+    '1',
+    '2',
+    '3',
+    '4',
+    '5',
+    '6',
+    '7',
+    '8',
+    '9'
+  ]
   // set active button only button able to be modified
   // if this is not done, strange things can happen when click and hold mouse,
   // moving to another button and release mouse will toggle style on more than one button,
@@ -24,14 +36,15 @@ const NumberButton = props => {
     e.preventDefault()
     buttonClicked = e.target
 
-    if (buttonClicked.classList.contains('zeroButton')) {
-      buttonClicked.classList.toggle('bigButtonClick')
-    } else if (buttonClicked.classList.contains('clearButton')) {
+    if (
+      buttonClicked.classList.contains('zeroButton') ||
+      buttonClicked.classList.contains('clearButton')
+    ) {
       buttonClicked.classList.toggle('bigButtonClick')
     } else {
       buttonClicked.classList.toggle('buttonClick')
     }
-    console.log('The button was pressed', buttonClicked.id)
+    console.log('The button was pressed', buttonClicked)
   }
 
   var buttonUp = event => {
