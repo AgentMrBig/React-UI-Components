@@ -2,6 +2,9 @@ import React from 'react'
 import './Button.css'
 
 const NumberButton = props => {
+  // array of button id's so I can loop through all buttons and remove the button
+  // press style from all buttons when button is released, this gets over style errors
+  // where it appears the buttons get stuck in pressed state.
   const numberButtonIds = [
     '10',
     '0',
@@ -15,13 +18,10 @@ const NumberButton = props => {
     '8',
     '9'
   ]
-  // set active button only button able to be modified
-  // if this is not done, strange things can happen when click and hold mouse,
-  // moving to another button and release mouse will toggle style on more than one button,
-  // giving impression of buttons getting "stuck"
 
   var buttonClicked
 
+  // function to reset styles when mouse release, fed to .forEach()
   var resetStyle = (item, index, array) => {
     var curButton = document.getElementById(index)
     if (curButton.classList.contains('buttonClick')) {
@@ -32,6 +32,7 @@ const NumberButton = props => {
     }
   }
 
+  // on mousedown toggle button pressed style
   var buttonDown = e => {
     e.preventDefault()
     buttonClicked = e.target
@@ -47,9 +48,10 @@ const NumberButton = props => {
     console.log('The button was pressed', buttonClicked)
   }
 
+  // on mouseup run forEach on all buttonId's feeding resetStyle function to remove
+  // pressed style from all buttons once mouseup fires
   var buttonUp = event => {
     event.preventDefault()
-    // var buttonRelease = document.getElementById(buttonClicked.id)
 
     if (!mouseDown) {
       console.log('RELEASED')
@@ -60,11 +62,7 @@ const NumberButton = props => {
     console.log('The button was release', buttonClicked)
   }
 
-  // keep track of mouse down state, in the event a button is pressed, mouse moved over
-  // another button before being release, will cause unwanted class toggling
-  // we keep track of the mouse here so that no matter what if the mouse is not down
-  // will toggle off the class for styling buttons pressed by checking if(!mouseDown){
-  // remove pressed button style}
+  // testing setting mouseDown as a 1 or 0, true or false
   var mouseDown = 0
 
   document.body.onmousedown = function () {

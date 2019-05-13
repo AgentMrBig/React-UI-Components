@@ -69,6 +69,14 @@
     background-color: #F0F8FF;
 }
 
+.actionButtonClick {
+    border: solid 2px grey;
+    height: 3.9rem;
+    width: 24.5%;
+    font-size: 2.95rem;
+    background-color: rgb(175, 2, 2);
+}
+
 .bigButtonClick {
     border: solid 2px grey;
     height: 3.9rem;
