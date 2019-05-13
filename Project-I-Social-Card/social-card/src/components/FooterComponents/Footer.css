@@ -1,0 +1,10 @@
+.footer-wrapper {
+    border: solid 1px blue;
+    display: flex;
+    justify-content: center;
+    margin-top: 0rem;
+    height: 1.8rem;
+    padding-top: 1rem;
+}
+
+.footerContent {}
