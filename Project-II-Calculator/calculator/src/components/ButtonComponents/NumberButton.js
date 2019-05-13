@@ -6,7 +6,7 @@ const NumberButton = props => {
   // press style from all buttons when button is released, this gets over style errors
   // where it appears the buttons get stuck in pressed state.
   const numberButtonIds = [
-    '10',
+    'clear',
     '0',
     '1',
     '2',
@@ -23,7 +23,7 @@ const NumberButton = props => {
 
   // function to reset styles when mouse release, fed to .forEach()
   var resetStyle = (item, index, array) => {
-    var curButton = document.getElementById(index)
+    var curButton = document.getElementById(array[index])
     if (curButton.classList.contains('buttonClick')) {
       curButton.classList.remove('buttonClick')
     }

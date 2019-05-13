@@ -18,7 +18,7 @@ export default class App extends React.Component {
         <CalculatorDisplay />
         <div className='buttons'>
           <div className='buttonRow'>
-            <NumberButton id='10' buttonStyle={'clearButton'} text='CLEAR' />
+            <NumberButton id='clear' buttonStyle={'clearButton'} text='CLEAR' />
             <ActionButton
               id='divide'
               buttonStyle={'actionButton'}
